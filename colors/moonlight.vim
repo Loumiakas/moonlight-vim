@@ -1,14 +1,14 @@
-" Name:         Solarized 8 Flat
+" Name:         Moonlight
 " Description:  Precision colors for machines and people
-" Author:       Ethan Schoonover
-" Maintainer:   Lifepillar <lifepillar@lifepillar.me>
-" Website:      https://github.com/lifepillar/vim-solarized8
+" Author:       Ruslanas Laskovas
+" Maintainer:   Ruslanas Laskovas
+" Website:      https://github.com/loumiakas/moonlight
 " License:      OSI approved MIT license
-" Last Updated: Tue Mar 26 08:40:59 2019
+" Last Updated: Tue Apr 25 08:40:59 2019
 
 if !(has('termguicolors') && &termguicolors) && !has('gui_running')
       \ && (!exists('&t_Co') || &t_Co < (get(g:, 'solarized_use16', &t_Co < 256) ? 16 : 256))
-  echoerr '[Solarized 8 Flat] There are not enough colors.'
+  echoerr '[Moonlight] There are not enough colors.'
   finish
 endif
 
@@ -17,7 +17,7 @@ if exists('syntax_on')
   syntax reset
 endif
 
-let g:colors_name = 'solarized8_flat'
+let g:colors_name = 'moonlight'
 
 " 256-color variant
 if !get(g:, 'solarized_use16', &t_Co < 256)
